@@ -168,7 +168,7 @@ function FormSubmitListener() {
             });
         } else {
             $('#InputEmail').val('');
-            var data = {email: email, redirect: 'AdminFrontend'};
+            var data = {email: email, redirect: 'Frontend'};
             var res = request('POST', '/pswd/forget', data, false);
             if (res.code == 204) {
                 ShowAlart('alert-success', '已寄出!!!', false, true);
