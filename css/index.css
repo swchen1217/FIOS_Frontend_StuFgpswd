@@ -1,0 +1,126 @@
+body {
+    background-color: #e5e5e5;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#mNav {
+    line-height: 40px;
+}
+
+#mNav li .nav-link {
+    color: #fff;
+    padding: 8px 16px;
+}
+
+#mNav .navbar-nav li > a:hover, #topheader .navbar-nav li > a:focus {
+    background-color: #999;
+    color: #f2f2f2;
+}
+
+#mNav .navbar-nav li.active > a {
+    background-color: #fff;
+    color: #000;
+}
+
+#mNav .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+    color: #000000;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#CS_grade_select li .active, #SM_second_submit_grade_select li .active, #SR_grade_select li .active {
+    background-color: #f07e22;
+}
+
+#SR_show_mode_switch li .active {
+    background-color: #ff85b9;
+}
+
+#CS_grade_select li :not(.active):not(.disabled), #CS_class_selectG1 li :not(.active):not(.disabled), #CS_class_selectG2 li :not(.active):not(.disabled) {
+    color: #000000;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.form-check-input {
+    width: 25px;
+    height: 25px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #303030;
+    color: #FFFFFF;
+    /*height: 50px;*/
+    line-height: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
